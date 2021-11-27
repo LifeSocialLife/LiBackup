@@ -1,8 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+    <RootNamespace>LiBackup.ClientBackupHelper</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
@@ -17,6 +18,12 @@
   <ItemGroup Condition="'$(Configuration)' == 'Release'">
     <PackageReference Include="LiTools.Helpers.IO" Version="0.0.4" />
   </ItemGroup>
+
+
+  <ItemGroup>
+    <AdditionalFiles Include="../stylecop.json" />
+  </ItemGroup>
+
   
 </Project>
 
